@@ -1,0 +1,10 @@
+Eval in debugee notes
+
+To set the value of a var in the debugee:
+
+   (. #'ants/evap-rate (commuteRoot (fn [_] 0.0))) ;for some reason def does not seem to have an effect, even though it appears to succeed
+
+Use pr-str to see clojure structures, eg:
+  
+   (pr-str @(ants/place test/loc))
+
